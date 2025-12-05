@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Professional To-Do App</title>
+  <link rel="stylesheet" href="style5.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1>Task Manager</h1>
+      <form id="add-task-form" aria-label="Add new task form">
+        <input type="text" id="task-input" placeholder="Add new task..." aria-label="Task description" autocomplete="off" required />
+        <button type="submit" aria-label="Add task">Add</button>
+      </form>
+    </header>
+
+    <main>
+      <section class="task-section" aria-labelledby="pending-heading">
+        <h2 id="pending-heading">Pending Tasks</h2>
+        <ul id="pending-tasks" class="task-list" aria-live="polite" aria-relevant="additions removals updates"></ul>
+      </section>
+
+      <section class="task-section" aria-labelledby="completed-heading">
+        <h2 id="completed-heading">Completed Tasks</h2>
+        <ul id="completed-tasks" class="task-list" aria-live="polite" aria-relevant="additions removals updates"></ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 Gadal Prasad Reddy | Built with Accessiblity & Responsiveness</p>
+    </footer>
+  </div>
+
+  <script src="script5.js"></script>
+</body>
+</html>
